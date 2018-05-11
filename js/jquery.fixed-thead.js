@@ -1,7 +1,7 @@
 (function($) {
     var table, thead, fixed;
     
-    $.fn.fixed-thead = function(options) {
+    $.fn.fixedThead = function(options) {
         var settings = $.extend({
             clone_id: 'cloned-thead'
         }, options);
@@ -28,7 +28,7 @@
             fixed.css('min-width', thead.width() + 'px');
         }
         
-        fixed.csss('width', thead.width() + 'px');
+        fixed.css('width', thead.width() + 'px');
         fixed.find('th').each(function(index) {
             $(this).css('width', thead.find('th').eq(index).width() + 'px');
         });
